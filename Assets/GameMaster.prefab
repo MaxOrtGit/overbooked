@@ -1,0 +1,110 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &353394501978871437
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 353394501978871439}
+  - component: {fileID: 353394501978871438}
+  - component: {fileID: 353394501978871440}
+  - component: {fileID: 353394501978871441}
+  m_Layer: 0
+  m_Name: GameMaster
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &353394501978871439
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 353394501978871437}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1.0000001, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &353394501978871438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 353394501978871437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23a676ff7cef6f845b355df440610c6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buildings:
+  - {fileID: 3759275048062894401, guid: dea6a5007ba4fbf4db552b4569d6defb, type: 3}
+  - {fileID: 5321767933418187573, guid: 00a79fc63e144cd43bab2061d998fa9d, type: 3}
+  - {fileID: 1989027960826527457, guid: c1a4dc2a02ef47d4b81d8b0efd24829a, type: 3}
+  buildingContainer: {fileID: 0}
+  totalBuildingsSide: 20
+  buildingZ: 40
+  buildingSpaceingX: 45
+  camera: {fileID: 0}
+--- !u!114 &353394501978871440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 353394501978871437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c335181de6673fd47a207df522c7e1e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  streets:
+  - {fileID: 2296393225572845268, guid: 6386f5fca779c1f4b888a71279e05467, type: 3}
+  streetContainer: {fileID: 0}
+  totalStreets: 20
+  streetZ: 50
+  camera: {fileID: 0}
+--- !u!114 &353394501978871441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 353394501978871437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7605d245efd0b9146aefdacd1f761893, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacles:
+  - obs: {fileID: 3025791573714060705, guid: d7b9d7d0d55fe8b49992fca28db569ef, type: 3}
+    weight: 6
+  - obs: {fileID: 6338402834283686971, guid: 05e1b4aaee2b4a24eaee8b81547fc27d, type: 3}
+    weight: 6
+  - obs: {fileID: 772034047534131664, guid: af7f382f7c9da8e4e92ec7b7c58aea9f, type: 3}
+    weight: 1
+  - obs: {fileID: 8936940462450349970, guid: 4cd3be38a0464a448b22b258af045718, type: 3}
+    weight: 5
+  - obs: {fileID: 2649355210894001261, guid: b0d51ca4a7449ab45893d8061c470ef8, type: 3}
+    weight: 7
+  - obs: {fileID: 198088791253490504, guid: c807024a7b4dfde48b5bcdc6edd50af2, type: 3}
+    weight: 6
+  - obs: {fileID: 8792874267812521069, guid: a2eaf2da9072a274e8f23764fa0c2b31, type: 3}
+    weight: 7
+  coin:
+    obs: {fileID: 3463199706705912831, guid: 21b5379364927bf468d807071a27b3af, type: 3}
+    weight: 500
+  obstacleContainer: {fileID: 0}
+  totalObstacles: 10
+  defaultSpacing: 80
+  xBounds: 25
+  coinCountdown: 0
+  camera: {fileID: 0}
