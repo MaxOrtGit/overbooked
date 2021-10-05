@@ -5,4 +5,4 @@ This is a game made in unity where you have to reach the train before it is full
 Backstory:
 This game was made in 4 days during the DePaul Summer Game Development Camp. Our team was made up of 3 programmers and 2 artists. I ended up doing like 80% of the programming because my other 2 teammates were new to unity and programming. To quote our instructor "Your game is like an actual game, but having you [on the team] was basically cheating.”
 
-The best working build is 'real final build under the build folder"
+The best working build is "real final build under the build folder"
